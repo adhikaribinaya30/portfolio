@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register - SXC Club Workspace</title>
+</head>
+<body>
+    <header></header>
+
+    <div class="wrapper">
+        <form action="index.php" method="post">
+            <h1>Sign Up</h1>
+
+            <div class="textbox">
+                <input name="full_name" type="text" placeholder="Full Name" pattern="[A-Za-zÀ-ÿ]+(\s+[A-Za-zÀ-ÿ]+)+" required>
+            </div>
+
+            <div class="textbox">
+                <input name="username" type="text" placeholder="Username" pattern="[A-Za-zÀ-ÿ]+(\s+[A-Za-zÀ-ÿ]+)+" required>
+            </div>
+
+            <div class="grade_select">
+                <p for="grade">
+                    <label class="title">Grade:</label>
+                    <label for="XI">
+                        <label>XI</label> 
+                        <input value="11" type="radio" name="grade" required>
+                    </label> 
+                    
+                    <label for="XI">
+                        <label>XII</label>
+                        <input type="radio" name="grade" value="12" required>
+                    </label>
+                </p>    
+            </div>
+
+            <div class="textbox">
+                <input name="email" type="email" required placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@(?i)sxc\.edu\.np" minlength="8" maxlength="20">
+            </div>
+            
+            <div class="textbox">
+                <input name="password" type="password" required placeholder="Password" pattern="[a-zA-Z0-9./_*&^%$#@!\-]{8,15}" minlength="8" maxlength="20">
+            </div>
+
+            <div class="textbox">
+                <input type="password" name="confirm_password" required placeholder="Confirm Password" pattern="[a-zA-Z0-9./_*&^%$#@!\-]{8,15}" minlength="8" maxlength="20">
+            </div>
+
+            <div class="button">
+                <button type="submit">Register</button>
+            </div>
+
+            <div class="login_link">
+                <p>Already have an account? <a href="Signin.html">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
